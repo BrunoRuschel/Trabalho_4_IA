@@ -36,8 +36,10 @@ def evaluate_custom(state, player:str) -> float:
     """
 
     corners = [(0, 0), (0, 7), (7, 0), (7, 7)]
+    s=0
 
     cantos = sum(1 for x, y in corners if state.board.tiles[x][y] == player)
+
 
     return cantos
 
